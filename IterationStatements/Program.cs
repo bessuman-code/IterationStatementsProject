@@ -16,21 +16,25 @@ namespace IterationStatements
 
             int aNumb = 0;
 
-            // Create a do-while loop
-            do
+            //Create a do-while loop
+            Console.WriteLine("Executing the DO-WHILE");
+           do
             {
                 // Increment your variable by 1
                 ++aNumb;
                 // Then add your variable to "numbers"
                 numbers.Add(aNumb);
+               
             } while (aNumb < 100);
             // While your variable is less than 100
-
+            
+            foreach (var outputA in numbers)
+            Console.WriteLine($"***A*** ITEMS ENTERED FROM DO WHILE LOOP {outputA}");
 
 
             // Create a while loop
-
-            while(aNumb<200)
+            Console.WriteLine("Executing the WHILE");
+            while (aNumb<200)
             // While your variable is less than 200
             {
                 // Increment your variable by 1
@@ -44,8 +48,11 @@ namespace IterationStatements
             // Create a foreach loop
             foreach(var output in numbers)
             // Write your variable to the console
+            Console.WriteLine($"***B*** ITEMS ENTERED FROM WHILE LOOP {output}");
 
-            Console.WriteLine($"{output}");
+            
+            
+            Console.WriteLine("Executing the FOR");
             Console.WriteLine("Decrease:");
 
             // Create a for loop
@@ -56,7 +63,7 @@ namespace IterationStatements
             // Decrement i by 1
             {
                 // Write to the console "numbers" at index i
-                Console.WriteLine($"{numbers[i]}");
+                Console.WriteLine($"***C*** ITEMS SHOWN USING FOR LOOP {numbers[i]}");
             }
         }
     }
